@@ -1,0 +1,34 @@
+Klasse
+
+Eine Klasse ist ein Programmteil,
+der die Eigenschaften (Klassenvariablen / Attribute)
+und Fähigkeiten (Methoden) der Objekte
+beschreibt, welche Instanzen dieser Klasse,
+bzw. "vom Typ" dieser Klasse sind.
+
+
+Objekt
+
+Ein Objekt ist eine Instanz einer Klasse.
+Es existiert zur Laufzeit eines Programmes und
+hat die Eigenschaften und Fähigkeiten, welche in
+der entsprechenden Klasse beschrieben sind (s.o.).
+
+
+Variable
+
+Eine Variable ist ein Verweis auf ein Objekt (oder Daten),
+welches zur Laufzeit eines Programmes existiert und
+eine bestimmte Stelle des Arbeitsspeichers des Rechners
+belegt. Über den Namen dieser Variable lässt sich das
+Objekt (bzw. die Daten) ansprechen/referenzieren.
+
+
+Methode
+
+Eine Methode ist ein Bestandteil einer Klasse. Sie stellt
+einen ausführbaren Programmteil dar und verarbeitet
+zum Beispiel an sie übergebene Daten oder führt andere Aufgaben
+aus. Eine Methode kann einen Rückgabewert haben, d.h. von
+ihr erstellte Daten/Objekte o.ä. als Ergebnis zurückliefern.
+Der Rückgabetyp legt dabei fest, von welchem Datentyp diese Rückgabe ist.
