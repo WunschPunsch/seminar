@@ -29,8 +29,6 @@ public class Application {
 		warenkorb.addProdukt(brot);
 
 		warenkorb.bezahlen();
-		// TODO: An der Kasse bezahlen....
-		// TODO: Quitung auf der Konsole ausgeben...
-
+	
 	}
 }
