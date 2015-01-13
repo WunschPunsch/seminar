@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class Wurst extends Produkt implements Lebensmittel {
 
-	private int gramm;
 	private Date haltbarkeit;
+	private int referenceGrams;
 
-	public Wurst(int preis, int gramm, String name, Date bis, int stueckZahl) {
-		super(preis, name, stueckZahl);
-		setGewicht(gramm);
+	public Wurst(String name, int preisPerMenge, int refgrams, int menge, Date bis) {
+		super(name, preisPerMenge, menge);
 		setHaltbarkeit(bis);
+		setReferenceGrams(refgrams);
 	}
 
 	@Override
@@ -24,12 +24,14 @@ public class Wurst extends Produkt implements Lebensmittel {
 	}
 
 	@Override
-	public void setGewicht(int gramm) {
-		this.gramm = gramm;
+	public void setReferenceGrams(int refGrams) {
+		this.referenceGrams = refGrams;
+
 	}
 
 	@Override
-	public int getGewicht() {
-		return gramm;
+	public int getReferenceGrams() {
+		return referenceGrams;
 	}
+
 }

@@ -1,6 +1,5 @@
 package de.uni_koeln.info.java.seminar.data;
 
-
 /**
  * 
  * @author matana
@@ -8,30 +7,30 @@ package de.uni_koeln.info.java.seminar.data;
  */
 public class Produkt {
 
-	private int preis;
+	private double preisPerMenge;
 	private String name;
-	private int stueckZahl;
+	private int menge;
 
-	public Produkt(int preis, String name, int stueckeZahl) {
-		this.preis = preis;
+	public Produkt(String name, double preisPerMenge, int menge) {
 		this.name = name;
-		this.stueckZahl = stueckeZahl;
+		this.preisPerMenge = preisPerMenge;
+		this.menge = menge;
 	}
 
-	public int getStueckZahl() {
-		return stueckZahl;
+	public int getMenge() {
+		return menge;
 	}
 
-	public void setStueckZahl(int stueckZahl) {
-		this.stueckZahl = stueckZahl;
+	public void setMenge(int menge) {
+		this.menge = menge;
 	}
 
-	public int getPreis() {
-		return preis;
+	public double getPreisPerMenge() {
+		return preisPerMenge;
 	}
 
-	public void setPreis(int preis) {
-		this.preis = preis;
+	public void setPreisPerMenge(double preis) {
+		this.preisPerMenge = preis;
 	}
 
 	public String getName() {
@@ -44,6 +43,7 @@ public class Produkt {
 
 	@Override
 	public String toString() {
-		return String.format("%s, kostet %s EURO", getName(), getPreis());
+		return String.format("%5s %30s %7s EUR", getMenge(), getName(),
+				getPreisPerMenge());
 	}
 }

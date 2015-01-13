@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Brot extends Produkt implements Lebensmittel {
 
-	private int gramm;
+	private int referenceGrams;
 	private Date haltbarkeit;
 
-	public Brot(int preis, int gramm, String name, Date bis, int stueckeZahl) {
-		super(preis, name, stueckeZahl);
-		setGewicht(gramm);
+	public Brot(String name, int preis, int refGrams, int menge, Date bis) {
+		super(name, preis, menge);
+		setReferenceGrams(refGrams);
 		setHaltbarkeit(bis);
 	}
 
@@ -24,13 +24,14 @@ public class Brot extends Produkt implements Lebensmittel {
 	}
 
 	@Override
-	public void setGewicht(int gramm) {
-		this.gramm = gramm;
+	public void setReferenceGrams(int refGrams) {
+		this.referenceGrams = refGrams;
+
 	}
 
 	@Override
-	public int getGewicht() {
-		return gramm;
+	public int getReferenceGrams() {
+		return referenceGrams;
 	}
 
 }
