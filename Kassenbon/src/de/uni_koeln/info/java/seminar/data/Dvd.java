@@ -1,10 +1,9 @@
 package de.uni_koeln.info.java.seminar.data;
 
-
 public class Dvd extends Produkt {
 
-	public Dvd(int preis, String name, int stueckeZahl) {
-		super(preis, name, stueckeZahl);
+	public Dvd(String name, int preis, int stueckeZahl) {
+		super(name, preis, stueckeZahl);
 	}
 
 }

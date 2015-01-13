@@ -3,14 +3,15 @@ package de.uni_koeln.info.java.seminar.data;
 import java.util.Date;
 
 public class Kaese extends Produkt implements Lebensmittel {
-	
-	private int gramm;
+
+	private int referenceGrams;
 	private Date haltbarkeit;
 
-	public Kaese(int preis, int gramm, String name, Date bis, int stueckZahl) {
-		super(preis, name, stueckZahl);
-		setGewicht(gramm);
+	public Kaese(String name, int preisPerMenge, int referenceGrams, int menge,
+			Date bis) {
+		super(name, preisPerMenge, menge);
 		setHaltbarkeit(bis);
+		setReferenceGrams(referenceGrams);
 	}
 
 	@Override
@@ -24,13 +25,14 @@ public class Kaese extends Produkt implements Lebensmittel {
 	}
 
 	@Override
-	public void setGewicht(int gramm) {
-		this.gramm = gramm;
+	public void setReferenceGrams(int refGramms) {
+		this.referenceGrams = refGramms;
+
 	}
 
 	@Override
-	public int getGewicht() {
-		return gramm;
+	public int getReferenceGrams() {
+		return referenceGrams;
 	}
 
 }

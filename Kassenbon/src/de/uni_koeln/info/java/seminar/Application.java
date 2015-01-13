@@ -16,10 +16,10 @@ public class Application {
 
 	public static void main(String[] args) {
 
-		Kaese kaese = new Kaese(10, 1, "weichkäse", new Date(), 1);
-		Wurst wurst = new Wurst(30, 90, "mett", new Date(), 3);
-		Dvd dvd = new Dvd(16, "Der unglaubliche Hulk", 1);
-		Brot brot = new Brot(5, 1, "Vollkorn", new Date(), 2);
+		Kaese kaese = new Kaese("Weichkässe", 3, 100, 150, new Date());
+		Wurst wurst = new Wurst("Mett", 2, 200, 300, new Date());
+		Dvd dvd = new Dvd("Der unglaubliche Hulk", 15, 2);
+		Brot brot = new Brot("Vollkorn", 4, 1000, 1000, new Date());
 
 		Warenkorb warenkorb = new Warenkorb(150);
 
@@ -27,10 +27,10 @@ public class Application {
 		warenkorb.addProdukt(wurst);
 		warenkorb.addProdukt(dvd);
 		warenkorb.addProdukt(brot);
-		
+
+		warenkorb.bezahlen();
 		// TODO: An der Kasse bezahlen....
-		// TODO: Quitung auf der Konsole ausgeben... 
+		// TODO: Quitung auf der Konsole ausgeben...
 
 	}
-
 }
