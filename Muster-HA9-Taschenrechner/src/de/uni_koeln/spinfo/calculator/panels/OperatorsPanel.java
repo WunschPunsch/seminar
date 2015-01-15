@@ -74,8 +74,8 @@ public class OperatorsPanel extends JPanel {
 		addOperatorButton(new AddButtonAction());
 		addOperatorButton(new PowerOfButtonAction());
 		addOperatorButton(new ResultButtonAction());
-		addOperatorButton(new SubtractButton());
-		addOperatorButton(new DivideButton());
+		addOperatorButton(new SubtractButton()); //eigener Button 
+		addOperatorButton(new DivideButton()); //eigener Button 
 	}
 	
 	/**

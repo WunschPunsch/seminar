@@ -124,8 +124,8 @@ public abstract class AbstractButtonAction extends AbstractAction {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		lastAction.executeOperation(valueInMemory,CalculatorDisplay.getValue());
-		CalculatorDisplay.setValue(valueInMemory);
-		CalculatorDisplay.prepareForClearDisplay();
+		CalculatorDisplay.setValue(valueInMemory);	//diese beiden Zeilen wurden aus den
+		CalculatorDisplay.prepareForClearDisplay();	//Button-Klassen hierher verschoben (siehe Aufgabe!)
 		lastAction = this;
 	}
 	

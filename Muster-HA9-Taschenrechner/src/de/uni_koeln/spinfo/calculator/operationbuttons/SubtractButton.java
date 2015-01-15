@@ -10,8 +10,8 @@ public class SubtractButton extends AbstractButtonAction {
 	@Override
 	protected void executeOperation(Integer firstParam, Integer secondParam) {
 		System.out.println("executeOperation \"subtract\" with " + firstParam
-				+ " and " + secondParam);
-		valueInMemory = firstParam - secondParam; //eigentliche Operation
+				+ " and " + secondParam); //nur zur Informationsausgabe auf der Konsole
+		valueInMemory = firstParam - secondParam; //eigentliche Operation (siehe bereits bestehende Klassen!)
 	}
 
 }
