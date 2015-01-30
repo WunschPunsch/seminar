@@ -1,0 +1,35 @@
+Aufgaben 10
+
+(1) Dateihandling
+
+Nur kurz besprochen wurde die Klasse java.io.File, daher solltest Du Dir selber etwas Wissen darüber aneignen. Schreibe ein Programm, das ein File-Objekt erzeugt, z.b.
+
+import java.io.File;
+
+File file = new File("C:/Programme");
+...
+
+und das anschließend einige Informationen über diese Datei ausgibt:
+
+    Existiert die Datei?
+    Ist die Datei lesbar?
+    Handelt es sich um ein Verzeichnis?
+    Wenn es ein Verzeichnis ist, wie viele Dateien enthält es?
+    Wie groß ist die Datei?
+    Wann wurde sie zuletzt geändert?
+
+Die Methoden, die dafür benötigt werden, sind alle in der Klasse File definiert, schlage also ggf. in der Dokumentation zu Java nach.
+
+(2) Fehlerbehandlung
+
+Schreibe ein Programm, in dem die Summe aller Zahlen innerhalb eines int-Arrays berechnet wird, d.h. in etwa wie folgt:
+
+int [] array = { 1, 2, 3, 4, 5, 6 };
+
+int summe = berechneSumme(array);
+
+Benutze jedoch keine Abbruchbedingung innerhalb der notwendigen Schleife in berechneSumme, sondern verwende stattdessen einen try-catch-Block, um die Programmausführung zu steuern.
+
+(3) Abgabe
+
+Schicke die bearbeiteten Aufgaben bis zum 21.01., 14 h, per Mail an tutoren(at)spinfo.uni-koeln.de
