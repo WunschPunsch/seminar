@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Muster-HA9-Taschenrechner</name>
+	<comment>@key 32303035303431312D35205461736368656E726563686E6572 </comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.omondo.uml.std.Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.jem.beaninfo.BeanInfoNature</nature>
+		<nature>com.omondo.uml.std.Nature</nature>
+	</natures>
+</projectDescription>

@@ -12,3 +12,33 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fdt
+
+.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fdx
+
+*.fnm
+
+*.frq
+
+*.nrm
+
+*.tii
+
+*.tis
+
+*.prx
+
+.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_1
+
+*.gen
+
+*.lock
+
+*.repositories
+
+*.zip
+
+*.xml
+
+*.properties
